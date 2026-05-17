@@ -28,7 +28,7 @@ header input {
     border: none;
 }
 
-/* Products */
+/* Products */<img src="images/offer1.jpg">
 .section-title {
     padding: 15px;
 }
