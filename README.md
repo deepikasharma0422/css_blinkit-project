@@ -1,6 +1,4 @@
-Got it! I added your contact info to the poster code. 
 
-Bas ye file `index.html` ke naam se upload kar do GitHub pe, poster + contact details dono dikhenge:
 <!DOCTYPE html>
 <html lang="en">
 <head>
