@@ -102,8 +102,7 @@ button {
     <!-- LEFT -->
     <div class="left">
         <div class="logo">blinkit</div>
-        <div class="tag">India’s Last Minute App</div>
-
+        <div class=  >India’s Last Minute App</div>C:\Users\M S I\OneDrive\Desktop
         <div class="big-text">
             Groceries delivered in <span class="green">10 minutes</span>
         </div>
@@ -128,8 +127,6 @@ button {
 
 </div>
 
-<!-- YOUR NAME -->
-<div class="name">Made by Dipika Sharma 💚</div>
 
 <script>
 function openApp() {
