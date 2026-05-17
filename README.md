@@ -1,288 +1,209 @@
+Got it! I added your contact info to the poster code. 
+
+Bas ye file `index.html` ke naam se upload kar do GitHub pe, poster + contact details dono dikhenge:
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Blinkit Poster Clone - Dipika Sharma</title>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deepika♡ Portfolio</title>
 <style>
-body {
-    margin: 0;
-    font-family: Arial;
-}
-
-/* MAIN POSTER */
-.poster {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to right, #f7d400, #f5c400);
-    padding: 40px;
-    height: 100vh;
-}
-
-/* LEFT TEXT */
-.left {
-    width: 50%;
-}
-
-.logo {
-    font-size: 40px;
-    font-weight: bold;
-    color: black;
-}
-
-.tag {
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.big-text {
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.green {
-    color: green;
-}
-
-.sub {
-    margin-top: 10px;
-    font-size: 18px;
-}
-
-/* FEATURES */
-.features {
-    display: flex;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.box {
-    background: green;
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 14px;
-}
-
-/* RIGHT SIDE */
-.right {
-    width: 40%;
-    text-align: center;
-}
-
-.right img {
-    width: 300px;
-}
-
-/* BUTTON */
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-/* FOOTER NAME */
-.name {
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-    font-weight: bold;
-}
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+    
+    body {
+        background: linear-gradient(135deg, #fff5f0 0%, #ffe8d6 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .card {
+        background: white;
+        border-radius: 30px;
+        padding: 50px 40px;
+        max-width: 850px;
+        width: 100%;
+        box-shadow: 0 20px 60px rgba(255, 107, 53, 0.2);
+        text-align: center;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .logo {
+        color: #ff6b35;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
+    .tag {
+        color: #666;
+        font-size: 14px;
+        background: #f5f5f5;
+        padding: 6px 15px;
+        border-radius: 20px;
+    }
+    
+    h1 {
+        color: #ff6b35;
+        font-size: 48px;
+        line-height: 1.2;
+        margin: 20px 0;
+        font-weight: 800;
+    }
+    
+    h1 span {
+        color: #3d3d3d;
+        font-size: 36px;
+        display: block;
+    }
+    
+    .icons {
+        font-size: 40px;
+        margin: 20px 0;
+    }
+    
+    .poster-img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 20px;
+        margin: 30px auto;
+        display: block;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    .contact-box {
+        background: #fff5f0;
+        border-radius: 20px;
+        padding: 25px;
+        margin-top: 30px;
+        text-align: left;
+    }
+    
+    .contact-box h3 {
+        color: #ff6b35;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 12px 0;
+        color: #333;
+        font-size: 16px;
+    }
+    
+    .icon {
+        width: 35px;
+        height: 35px;
+        background: #ff6b35;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        flex-shrink: 0;
+    }
+    
+    .contact-item a {
+        color: #ff6b35;
+        text-decoration: none;
+    }
+    
+    .contact-item a:hover {
+        text-decoration: underline;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: 15px 40px;
+        background: #ff6b35;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 16px;
+        margin-top: 25px;
+        transition: all 0.3s ease;
+    }
+    
+    .btn:hover {
+        background: #e55a2b;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
+    }
+    
+    .footer {
+        margin-top: 25px;
+        color: #6a4c93;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    @media (max-width: 600px) {
+        h1 { font-size: 32px; }
+        h1 span { font-size: 24px; }
+        .card { padding: 30px 20px; }
+    }
 </style>
-
 </head>
-
 <body>
-
-<div class="poster">
-
-    <!-- LEFT -->
-    <div class="left">
-        <div class="logo">blinkit</div>
-        <div class=  >India’s Last Minute App</div>C:\Users\M S I\OneDrive\Desktop
-        <div class="big-text">
-            Groceries delivered in <span class="green">10 minutes</span>
-        </div>
-
-        <div class="sub">
-            Everything you need, delivered in a blink ⚡
-        </div>
-
-        <div class="features">
-            <div class="box">⚡ 10 min delivery</div>
-            <div class="box">⭐ Best quality</div>
-            <div class="box">💸 Great offers</div>
-        </div>
-
-        <button onclick="openApp()">Shop Now</button>
+<div class="card">
+    <div class="header">
+        <div class="logo">♡ Deepika Sharma</div>
+        <div class="tag">CS Student & Developer</div>
     </div>
-
-    <!-- RIGHT (PRODUCT IMAGE) -->
-    <div class="right">
-        <img src="https://images.unsplash.com/photo-1604908176997-431f76c42a8c">
+    
+    <div class="icons">💻 📱 🚀</div>
+    
+    <h1>Yeh se shuru<br><span>woh tak delivery</span></h1>
+    
+    <img src="https://i.ibb.co/8D3X9vQ/deepika-poster.png" alt="Deepika Portfolio" class="poster-img">
+    
+    <div class="footer">All my projects & links in one place</div>
+    
+    <a href="https://github.com/your-username" class="btn">View My GitHub</a>
+    
+    <div class="contact-box">
+        <h3>Contact Me</h3>
+        
+        <div class="contact-item">
+            <div class="icon">📞</div>
+            <div>
+                <strong>Phone:</strong> 
+                <a href="tel:7440716313">7440716313</a>
+            </div>
+        </div>
+        
+        <div class="contact-item">
+            <div class="icon">✉️</div>
+            <div>
+                <strong>Email:</strong> 
+                <a href="mailto:deepikasharma8730@gmail.com">deepikasharma8730@gmail.com</a>
+            </div>
+        </div>
+        
+        <div class="contact-item">
+            <div class="icon">📍</div>
+            <div>
+                <strong>Address:</strong> Bhopal
+            </div>
+        </div>
     </div>
-
 </div>
-
-
-<script>
-function openApp() {
-    window.open("https://blinkit.com", "_blank");
-}
-</script>
-
 </body>
 </html>
-}
-</style>
 
-</head>
-
-<body>
-
-<header>
-    <h2 onclick="showSection('home')">Blinkit</h2>
-    <div class="cart" onclick="showCart()">🛒 (<span id="count">0</span>)</div>
-</header>
-
-<!-- HOME -->
-<div id="home" class="section active">
-    <div class="poster">
-        <div>
-            <div class="big-text">Groceries in 10 minutes ⚡</div>
-            <button onclick="showSection('shop')">Shop Now</button>
-        </div>
-        <img src="https://images.unsplash.com/photo-1604908176997-431f76c42a8c" width="250">
-    </div>
-</div>
-
-<!-- SHOP -->
-<div id="shop" class="section">
-    <h2>All Groceries</h2>
-
-    <div class="grid">
-
-        <!-- MANY PRODUCTS -->
-        <script>
-        let products = [
-            {name:"Apple", price:120, img:"https://images.unsplash.com/photo-1589927986089-35812388d1f4"},
-            {name:"Banana", price:40, img:"https://images.unsplash.com/photo-1567306226416-28f0efdc88ce"},
-            {name:"Milk", price:50, img:"https://images.unsplash.com/photo-1582719478250-c89cae4dc85b"},
-            {name:"Bread", price:30, img:"https://images.unsplash.com/photo-1608198093002-ad4e005484ec"},
-            {name:"Eggs", price:80, img:"https://images.unsplash.com/photo-1518569656558-1f25e69d93d7"},
-            {name:"Rice", price:200, img:"https://images.unsplash.com/photo-1586201375761-83865001e31c"},
-            {name:"Oil", price:150, img:"https://images.unsplash.com/photo-1615484477201-9d3b3f9b49f6"},
-            {name:"Chips", price:20, img:"https://images.unsplash.com/photo-1585238342028-4c7c8d0a5c6b"},
-            {name:"Chocolate", price:60, img:"https://images.unsplash.com/photo-1606313564200-e75d5e30476c"},
-            {name:"Juice", price:90, img:"https://images.unsplash.com/photo-1571689936114-b16146f0c3f5"},
-            {name:"Tomato", price:40, img:"https://images.unsplash.com/photo-1567306226416-28f0efdc88ce"},
-            {name:"Potato", price:30, img:"https://images.unsplash.com/photo-1582515073490-dc3b0c5cfd74"}
-        ];
-
-        let html="";
-        products.forEach((p,i)=>{
-            html+=`
-            <div class="card">
-                <img src="${p.img}">
-                <p>${p.name}</p>
-                <p>₹${p.price}</p>
-                <button onclick="addToCart(${i})">Add</button>
-                <button onclick="buyNow(${i})">Buy</button>
-            </div>`;
-        });
-        document.write(html);
-        </script>
-
-    </div>
-</div>
-
-<!-- CART -->
-<div id="cartPage" class="section">
-    <h2>Your Cart</h2>
-    <div id="cartItems"></div>
-    <h3 id="total"></h3>
-    <button onclick="checkout()">Proceed to Checkout</button>
-</div>
-
-<!-- CHECKOUT -->
-<div id="checkoutPage" class="section">
-    <h2>Checkout</h2>
-
-    <div class="payment-box">
-        <input placeholder="Full Name">
-        <input placeholder="Address">
-        <input placeholder="Phone Number">
-
-        <h3>Select Payment</h3>
-
-        <button onclick="pay('UPI')">UPI</button>
-        <button onclick="pay('Card')">Card</button>
-        <button onclick="pay('COD')">Cash on Delivery</button>
-    </div>
-</div>
-
-<!-- ORDER SUCCESS -->
-<div id="successPage" class="section">
-    <h1>✅ Order Placed Successfully</h1>
-    <p>Thank you Dipika Sharma 💚</p>
-    <button onclick="showSection('home')">Go Home</button>
-</div>
-
-<script>
-let cart=[];
-
-/* NAVIGATION */
-function showSection(id){
-    document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-}
-
-/* CART FUNCTIONS */
-function addToCart(i){
-    cart.push(products[i]);
-    document.getElementById("count").innerText = cart.length;
-    alert(products[i].name + " added");
-}
-
-function buyNow(i){
-    cart.push(products[i]);
-    showCart();
-}
-
-function showCart(){
-    showSection('cartPage');
-    let items="";
-    let total=0;
-
-    cart.forEach(p=>{
-        items+=`<div class="cart-item">${p.name} - ₹${p.price}</div>`;
-        total+=p.price;
-    });
-
-    document.getElementById("cartItems").innerHTML = items;
-    document.getElementById("total").innerText = "Total: ₹" + total;
-}
-
-/* CHECKOUT */
-function checkout(){
-    showSection('checkoutPage');
-}
-
-/* PAYMENT */
-function pay(method){
-    alert("Payment via " + method + " successful ✅");
-    cart=[];
-    document.getElementById("count").innerText = 0;
-    showSection('successPage');
-}
-</script>
-
-</body>
-</html>
-<!-- YOUR NAME -->
-<div class="name">Made by Dipika Sharma 💚</div>
 
 
